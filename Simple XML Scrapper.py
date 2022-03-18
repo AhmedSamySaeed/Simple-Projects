@@ -4,7 +4,6 @@ import ctypes
 import os
 import sys
 
-
 #-----------getting data from user-----------#
 xml_file = input("Enter the XML file link: ") #sample: https://victoriousseo.com/post-sitemap.xml
 number_of_scrapped_articles = int(input("Enter the articles: "))
@@ -33,7 +32,6 @@ for i in range(number_of_scrapped_articles):
     #stating the end of a single scrap before the loop continues
     with open (saving_path + '\content.txt', mode = 'a', encoding = 'utf-8') as content_file:
         content_file.write('\n' + '-----------end of this article-----------' + '\n')
-
 
 #-----------simple saving validation-----------#
 links_file_validation = os.path.exists(saving_path + '\links.txt')
