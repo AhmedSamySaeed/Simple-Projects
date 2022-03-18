@@ -5,7 +5,7 @@ import os
 import sys
 
 #-----------getting data from user-----------#
-xml_file = input("Enter the XML file link: ") #sample: https://victoriousseo.com/post-sitemap.xml
+xml_file = str(input("Enter the XML file link: ")) #sample: https://victoriousseo.com/post-sitemap.xml
 number_of_scrapped_articles = int(input("Enter the articles: "))
 saving_path = str(input("Enter the saving path: ")) 
 
