@@ -36,6 +36,7 @@ for i in range(number_of_scrapped_articles):
 #-----------simple saving validation-----------#
 links_file_validation = os.path.exists(saving_path + '\links.txt')
 content_file_validation = os.path.exists(saving_path + '\content.txt')
+
 if links_file_validation and content_file_validation == True:
     print(ctypes.windll.user32.MessageBoxW(0, 'Your files has been marvelously saved, program will exit now', "Success!"))
 if links_file_validation == False:
